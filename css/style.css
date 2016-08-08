@@ -1,0 +1,239 @@
+/* Global Layout Set-up */
+
+* { 
+  box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	background-color: #efefef;
+	color: #4A4A4A;
+}
+
+ul {
+	list-style: none;
+	margin:  0;
+	padding: 0;
+}
+
+h1{
+	margin-bottom: 1.5em;
+}
+
+h2 {
+	font-size: 1.1em;
+	line-height: 2em;
+}
+
+a {
+	color: #4A4A4A;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7F7F7F;
+}
+
+img {
+	width: 100%;
+}
+
+
+/* Basic Layout */
+
+#wrapper {
+	text-align: center;
+	margin: 0;
+	max-width: 1200px;
+}
+
+header,
+.student-info,
+#portfolio {
+	padding: 3%;
+}
+
+footer {
+	padding: 8%;
+}
+
+
+#portfolio {
+	background-color: #fff;
+	 
+}
+
+.hide-for-small-only {
+	display:none;
+}
+
+
+
+/* Text formating */
+
+h1, .main-footer p span{
+	font-weight: 900;
+}
+
+h2, .main-nav, .nav-footer {
+	font-weight: 700;
+}
+
+h3{
+	font-weight: 400;
+}
+
+
+/* Header */
+
+.main-nav li {
+	background-color: #fff;
+	border-radius: 1%;
+	margin-bottom: .5em;
+}
+.main-nav li a {
+	display: block;
+	padding: .5em;
+}
+
+.student-photo {
+	width: 80%;
+	margin: 2em auto;
+	padding: 1em 0;
+	background-color: #E7E7E7;
+}
+
+.student-photo	img{
+	width: 50%;
+	border-radius: 100%;
+}
+
+
+
+/* Body */
+
+.student-info	{
+	margin-bottom: 2%;
+}
+
+.student-info p {
+	font-size: 1.2em;
+}
+
+.portfolio-item {
+	margin-bottom: 8%;
+}
+
+.portfolio-item p {
+	margin-bottom: 8%;
+	padding: 0 4%;
+}
+
+
+
+/* Footer */
+
+.main-footer {
+	color: #7F7F7F;
+}
+
+.main-footer p {
+	margin: 2rem 0;
+}
+
+.nav-footer {
+	border-top: 1px solid #E7E7E7;
+}
+
+.nav-footer p {
+	float: left;
+	margin: 1.5rem 0;
+}
+
+.nav-footer ul {
+	float: right;
+	margin: 1.5rem 0;
+}
+
+/********** Media Querys ************/
+
+/* Medium screens */
+
+@media (min-width: 768px) {
+
+	#wrapper {
+		margin: 0 auto;
+	}
+
+	.main-nav li {
+		background-color: transparent;
+		display: inline-block;
+	}
+
+	.portfolio-item {
+		width: 46%;
+		display: inline-block;
+		margin-right: 1%;
+		vertical-align: top;
+	}
+
+	.student-info p {
+		display: block;
+		float: left;
+		width: 50%;
+		text-align: left;
+		margin-top: 4em;
+	}
+	.student-photo {
+		float: right;
+		width: 40%;
+	}
+
+	.nav-footer ul{
+		width: 50%;
+		text-align: right;
+	}
+
+	.show-for-small-only {
+		display:none;
+	}
+
+	.hide-for-small-only {
+		display:inline-block;
+		margin-left: 4%;
+	}
+
+	.clearfix:after {
+	  	content: "";
+	 	display: table;
+	  	clear: both;
+	 }
+
+}
+
+
+/* Large screens */
+
+@media (min-width: 1024px) {
+
+	#wrapper{
+		width: 80%;
+	}
+
+	header h1 {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.portfolio-item {
+		width: 30%;
+		margin-right: 2%;
+	}
+
+}
